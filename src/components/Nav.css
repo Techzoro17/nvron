@@ -1,0 +1,41 @@
+.fadation{
+   animation: anounce 1s ease-in-out;
+}
+/* Basic styling for menu items */
+.menu li {
+    position: relative;
+    padding: 5px 0;
+    list-style: none;
+    cursor: pointer;
+     /* or any color you prefer */
+  }
+  
+  /* Style for the hover underline effect */
+  .menu li::after {
+    content: '';
+    position: absolute;
+     left: 0;
+    bottom: 0; 
+    width: 0;
+    height: 2px;
+    background-color: #000; 
+    transition: width 0.3s ease-in-out; 
+  }
+  
+  /* On hover, the underline fills from left to right */
+  .menu li:hover::after {
+    width: 100%; /* underline expands fully */
+  }
+  
+
+@keyframes anounce {
+    0%{
+        transform:translateY(-40px);
+    }
+   
+    100%{
+       transform: translateY(0px);
+    }
+}
+
+

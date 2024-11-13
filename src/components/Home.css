@@ -1,0 +1,104 @@
+.product:hover .first{
+    opacity: 100%;
+    transition: 1s;
+}
+.product_container::-webkit-scrollbar{
+    display: none;
+
+}
+.specials{
+    
+    display: flex ;
+    justify-content: space-between;
+    padding:0px 5vh;
+}
+.specials li{
+    width: 20%;
+}
+.specials  li div{
+
+    display: flex ;
+    justify-content: center;
+    size: 10vh;
+}
+.specials p{
+    font-size: x-large;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px;
+}
+.reveiw{
+    animation: textanimation 1s ;
+
+}
+
+
+.left:hover .leftinner{
+    animation: leftanimate 1s ;
+
+}
+.right:hover .rightinner{
+    animation: rightanimate 1s ;
+
+}
+
+@keyframes leftanimate {
+    0%{
+        transform: translateX(0);
+
+    }
+    25%{
+        transform: translateX(-50px);
+        opacity: 0;
+
+
+    }50%{
+        transform: translateX(50px);
+        opacity: 0;
+
+
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+
+
+    }
+}
+
+@keyframes rightanimate {
+    0%{
+        transform: translateX(0);
+
+    }
+    25%{
+        transform: translateX(50px);
+        opacity: 0;
+
+
+    }50%{
+        transform: translateX(-50px);
+        opacity: 0;
+
+
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+
+
+    }
+}
+
+@keyframes textanimation {
+    0%{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+
+    
+}
